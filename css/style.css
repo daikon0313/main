@@ -1,0 +1,54 @@
+/* ヘッダー全体のデザイン */
+header {
+    position: fixed; /* ヘッダーを画面上部に固定 */
+    top: 0; /* 上から0pxに配置 */
+    left: 0; /* 左から0pxに配置 */
+    width: 100%; /* ヘッダーを画面の横幅いっぱいに */
+    background-color: #333; /* 背景色をダークグレーに設定 */
+    color: #fff; /* 文字色を白に設定 */
+    padding: 1rem 0; /* 上下に1remの余白を設定 */
+    z-index: 1000; /* 他の要素より前面に表示 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 下に軽い影を追加 */
+}
+
+/* ナビゲーションリンクのデザイン */
+nav {
+    display: flex; /* リンクを横並びにする */
+    justify-content: center; /* 中央揃えにする */
+    gap: 1rem; /* 各リンク間の余白を設定 */
+}
+
+nav a {
+    color: #fff; /* リンクの文字色を白に */
+    text-decoration: none; /* リンクの下線を消す */
+    padding: 0.5rem 1rem; /* リンク内の文字に余白を設定 */
+    border-radius: 4px; /* リンクを少し丸くする */
+    transition: background-color 0.3s; /* ホバー時の色変更を滑らかに */
+}
+
+nav a:hover {
+    background-color: #555; /* ホバー時に背景色を濃いグレーに */
+}
+
+/* セクションのデザイン */
+section {
+    margin: 2rem 0; /* セクションの上下に2remの余白 */
+    padding: 1rem; /* セクション内に1remの余白 */
+    background-color: #f9f9f9; /* 背景色を薄いグレーに */
+    border-left: 4px solid #333; /* 左に濃いグレーのラインを追加 */
+}
+
+section h2 {
+    margin-bottom: 0.5rem; /* 見出しの下に0.5remの余白 */
+    color: #333; /* 見出しの文字色を濃いグレーに */
+}
+
+section p {
+    margin: 0.5rem 0; /* 各段落に上下0.5remの余白 */
+    color: #555; /* 段落の文字色を中間グレーに */
+}
+
+/* コンテンツがヘッダーに隠れないように調整 */
+main {
+    padding-top: 10rem; /* 上に10remの余白を追加してヘッダーと被らないようにする */
+}
